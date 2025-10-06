@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yojhan Alor - Desarrollador Backend</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- También puedes combinar con otra fuente moderna -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/estilos.css" />
+  </head>
+  <body>
+    <!-- Fondo con partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Navegación -->
+    <nav>
+      <div class="logo">
+        <img
+          src="/yojhan3.png"
+          alt="Logo de Yojhan Alor"
+          style="
+            height: 40px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 10px;
+          "
+        />
+      </div>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <!-- <a href="#experiencia">Experiencia</a> -->
+        <a href="#educacion">Educación</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <button class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio">
+      <div class="container">
+        <div class="avatar-placeholder">
+          <img
+            src="/yojhan3.png"
+            alt="Avatar profesional de Yojhan Alor"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 50%;
+            "
+          />
+        </div>
+        <h1>Yojhan Alor</h1>
+        <p class="tagline">Desarrollador Backend</p>
+        <p>
+          Apasionado por el desarrollo backend, con interés en crear sistemas
+          seguros, escalables y de alto rendimiento.
+        </p>
+        <div class="cta-buttons">
+          <a href="#proyectos" class="btn btn-primary">
+            <i class="fas fa-code"></i> Ver Proyectos
+          </a>
+          <a href="#contacto" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> Contáctame
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi">
+      <div class="container">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Soy un desarrollador backend junior con conocimientos en
+              programación, bases de datos y creación de APIs. He trabajado en
+              proyectos personales y académicos que me han permitido aplicar
+              buenas prácticas y fortalecer mis habilidades técnicas.
+            </p>
+            <p>
+              Me apasiona resolver problemas complejos y crear soluciones que no
+              solo funcionen, sino que también sean mantenibles a largo plazo.
+              <span class="highlight"
+                >Me interesa desarrollar aplicaciones escalables y seguras</span
+              >, aprendiendo constantemente nuevas tecnologías. Mis áreas de
+              interés incluyen microservicios, computación en la nube y DevOps.
+            </p>
+          </div>
+          <div class="about-cards">
+            <div class="card">
+              <i class="fas fa-rocket"></i>
+              <h3>Aprendizaje Rápido</h3>
+              <p>
+                Capacidad de adaptarme a nuevas tecnologías y aplicar buenas
+                prácticas.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Proyectos</h3>
+              <p>
+                Experiencia desarrollando APIs y aplicaciones en proyectos
+                personales y académicos.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fas fa-expand-arrows-alt"></i>
+              <h3>Trabajo en Equipo</h3>
+              <p>
+                Colaboración y comunicación para aportar valor en equipos de
+                desarrollo.
+              </p>
+            </div>
+            <div class="card">
+              <i class="fas fa-code"></i>
+              <h3>Buenas Prácticas</h3>
+              <p>
+                Código claro y estructurado aplicando principios básicos de
+                diseño.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades">
+      <div class="container">
+        <h2 class="section-title">Habilidades Técnicas</h2>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Lenguajes</h3>
+            <div class="skill-list">
+              <div class="skill-item">Java</div>
+              <div class="skill-item">C#</div>
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">TypeScript</div>
+              <div class="skill-item">Html</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+            <div class="skill-list">
+              <div class="skill-item">Spring Boot</div>
+              <div class="skill-item">Spring Framewrok</div>
+              <div class="skill-item">Node.js</div>
+              <div class="skill-item">Angular</div>
+              <div class="skill-item">ASP.NET Core</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+            <div class="skill-list">
+              <div class="skill-item">PostgreSQL</div>
+              <div class="skill-item">MySQL</div>
+              <div class="skill-item">Oracle Database</div>
+              <div class="skill-item">Microsoft SQL Server</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-cloud"></i> DevOps & Cloud</h3>
+            <div class="skill-list">
+              <div class="skill-item">Docker</div>
+              <div class="skill-item">Kubernetes</div>
+              <div class="skill-item">AWS</div>
+              <div class="skill-item">CI/CD</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-shield-alt"></i>Seguridad & Autenticación</h3>
+            <div class="skill-list">
+              <div class="skill-item">OAuth 2.0</div>
+              <div class="skill-item">JWT</div>
+              <div class="skill-item">Encriptación</div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>
+              <i class="fas fa-project-diagram"></i> Principios & Arquitectura
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">APIs REST</div>
+              <div class="skill-item">GraphQL</div>
+              <div class="skill-item">Microservicios</div>
+              <div class="skill-item">MVC</div>
+              <div class="skill-item">Git/GitHub</div>
+              <div class="skill-item">POO</div>
+              <div class="skill-item">Estructuras de Datos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos">
+      <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-content">
+              <h3>Sistema E-commerce</h3>
+              <p>
+                Plataforma de comercio electrónico escalable con microservicios,
+                procesamiento de pagos y sistema de recomendaciones.
+              </p>
+              <div class="project-tech">
+                <div class="tech-tag">Java</div>
+                <div class="tech-tag">Spring Boot</div>
+                <div class="tech-tag">PostgreSQL</div>
+                <div class="tech-tag">Redis</div>
+                <div class="tech-tag">Docker</div>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> Código
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-content">
+              <h3>Plataforma Analytics</h3>
+              <p>
+                Sistema de análisis de datos en tiempo real para seguimiento de
+                métricas de negocio con dashboards interactivos.
+              </p>
+              <div class="project-tech">
+                <div class="tech-tag">Python</div>
+                <div class="tech-tag">FastAPI</div>
+                <div class="tech-tag">Elasticsearch</div>
+                <div class="tech-tag">Kafka</div>
+                <div class="tech-tag">Kubernetes</div>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> Código
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <i class="fas fa-comments"></i>
+            </div>
+            <div class="project-content">
+              <h3>Chat en Tiempo Real</h3>
+              <p>
+                Aplicación de mensajería instantánea con salas de chat,
+                notificaciones push y cifrado de extremo a extremo.
+              </p>
+              <div class="project-tech">
+                <div class="tech-tag">Node.js</div>
+                <div class="tech-tag">Socket.io</div>
+                <div class="tech-tag">MongoDB</div>
+                <div class="tech-tag">Redis</div>
+                <div class="tech-tag">AWS</div>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> Código
+                </a>
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <!--     <section id="experiencia">
+      <div class="container">
+        <h2 class="section-title">Experiencia Profesional</h2>
+        <div class="timeline">
+           <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Senior Backend Developer</h3>
+              <p class="date">Tech Solutions Inc. | 2021 - Presente</p>
+              <p>
+                Lideré el desarrollo de APIs para productos financieros,
+                mejorando el rendimiento en un 40%. Implementé arquitectura de
+                microservicios que redujo los tiempos de despliegue en un 60%.
+              </p>
+            </div>
+           </div> 
+           <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Backend Developer</h3>
+              <p class="date">Innovate Labs | 2019 - 2021</p>
+              <p>
+                Desarrollé sistemas de procesamiento de datos para aplicaciones
+                de IoT. Diseñé e implementé APIs RESTful que sirvieron a más de
+                100,000 usuarios mensuales.
+              </p>
+            </div>
+          </div> 
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Junior Developer</h3>
+              <p class="date">StartupXYZ | 2018 - 2019</p>
+              <p>
+                Contribuí al desarrollo del backend para una plataforma de
+                e-learning. Implementé funcionalidades de autenticación y
+                autorización, y optimicé consultas de base de datos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ -->
+    <!-- Sección Educación -->
+    <section id="educacion">
+      <div class="container">
+        <h2 class="section-title">Educación & Certificaciones</h2>
+        <div class="certifications-grid">
+          <div class="cert-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Ingeniería Informática</h3>
+            <p>UNJFSC</p>
+            <p>2022 - 2027</p>
+          </div>
+          <div class="cert-card">
+            <i class="fab fa-aws"></i>
+            <h3>AWS Solutions Architect</h3>
+            <p>Amazon Web Services</p>
+            <p>2020</p>
+          </div>
+          <div class="cert-card">
+            <i class="fas fa-docker"></i>
+            <h3>Docker Certified Associate</h3>
+            <p>Docker Inc.</p>
+            <p>2021</p>
+          </div>
+          <div class="cert-card">
+            <i class="fab fa-microsoft"></i>
+            <h3>Azure Developer Associate</h3>
+            <p>Microsoft</p>
+            <p>2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Gmail</h3>
+                <p>yojhanalor1@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Ubicación</h3>
+                <p>Lima, Perú</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Teléfono</h3>
+                <p>+51 905988433</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="fab fa-dev"></i>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Yojhan Alor. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
