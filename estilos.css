@@ -355,6 +355,83 @@
         background: var(--dark-light);
       }
 
+      /* Stats generales */
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 2rem;
+        width: 100%;
+        margin-bottom: 3.5rem;
+      }
+
+      .stat-block {
+        background: var(--card-bg);
+        padding: 2rem 1.5rem;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        text-align: center;
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .stat-block:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+      }
+
+      .stat-number {
+        display: block;
+        font-size: 2.6rem;
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+        background: linear-gradient(to right, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .stat-label {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+      }
+
+      /* Mini-stats por proyecto */
+      .project-stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .stat-chip {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+        background: rgba(138, 43, 226, 0.12);
+        padding: 0.3rem 0.7rem;
+        border-radius: 15px;
+        font-size: 0.78rem;
+        border: 1px solid rgba(138, 43, 226, 0.35);
+        color: var(--text-secondary);
+      }
+
+      .stat-chip i {
+        color: var(--primary);
+        font-size: 0.85rem;
+      }
+
+      .team-note {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        margin-bottom: 1rem;
+      }
+
+      .team-note i {
+        color: var(--secondary);
+      }
+
       .projects-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -612,6 +689,19 @@
       textarea.form-control {
         min-height: 150px;
         resize: vertical;
+      }
+
+      .form-status {
+        font-size: 0.9rem;
+        min-height: 1.2em;
+      }
+
+      .form-status-ok {
+        color: var(--secondary);
+      }
+
+      .form-status-error {
+        color: #ff6b6b;
       }
 
       .social-links {

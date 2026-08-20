@@ -74,22 +74,42 @@ document
         });
 
 
+  const CONTACT_API_URL = "https://yojhan-portafolio-backend.onrender.com/api/contacto/recibir";
+
   document.querySelector(".contact-form").addEventListener("submit", async (e) => {
     e.preventDefault();
+
+    const submitBtn = document.querySelector("#contact-submit-btn");
+    const statusEl = document.querySelector("#form-status");
     const data = {
       nombre: document.getElementById("name").value,
       email: document.getElementById("email").value,
       asunto: document.getElementById("subject").value,
-      mensaje: document.getElementById("message").value
+      mensaje: document.getElementById("message").value,
+      website: document.getElementById("website").value // honeypot: debe ir vacío
     };
 
-    const res = await fetch("http://localhost:8080/api/contacto/recibir", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    });
+    submitBtn.disabled = true;
+    statusEl.textContent = "Enviando… (el servidor puede tardar unos segundos si estaba dormido)";
+    statusEl.className = "form-status";
 
-    const msg = await res.text();
-    alert(msg);
+    try {
+      const res = await fetch(CONTACT_API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      if (!res.ok) throw new Error(await res.text());
+
+      statusEl.textContent = "✅ Mensaje enviado correctamente. ¡Gracias por escribir!";
+      statusEl.className = "form-status form-status-ok";
+      e.target.reset();
+    } catch (err) {
+      statusEl.textContent = "❌ No se pudo enviar el mensaje. Intenta de nuevo o escribe a yojhanalor1@gmail.com";
+      statusEl.className = "form-status form-status-error";
+    } finally {
+      submitBtn.disabled = false;
+    }
   });
 
